@@ -1,0 +1,8 @@
+docker run --rm -ti -v:/home/jacques/Bureau/js:/app -w /app node:latest npm init
+docker run --rm -ti -v /home/jacques/Bureau/js:/app -w /app node:latest npm install scanf
+docker run --rm -ti -v /home/jacques/Bureau/js:/app -w /app node:latest node exo1.js
+Test :
+const scanf = require('scanf');
+console.log("Entrez votre nom :");
+let name = scanf('%s');
+console.log(`Votre nom est : ${name}`);
