@@ -15,7 +15,7 @@ class Circle{
     }
     /* Regarde si le point appartient au cercle */
     containsPoint(point){
-        if(Math.sqrt(Math.pow(point.getX-this.getX,2)+Math.pow(point.getY-this.getY,2)) <= this.radius) return true;
+        if(Math.sqrt(Math.pow(point.getX()-this.point.getX(),2)+Math.pow(point.getY()-this.point.getY(),2)) <= this.radius) return true;
         else return false;
     }
 }
