@@ -1,0 +1,36 @@
+<h1>Bienvenue sur le site</h1>
+<p>Connectez vous pour voir les posts</p>
+<h4 class="connec logged-out">Connexion</h4>
+<form class="connec logged-out">
+    <div class="mb-3">
+    <label for="emailCompteConnec" class="form-label">Email</label>
+    <input type="email" name="email" class="form-control" id="emailCompteConnec" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+    <label for="passCompteConnec" class="form-label">Password</label>
+    <input type="password" name="password" class="form-control" id="passCompteConnec">
+    </div>
+    <button class="btn btn-primary" id="connecCompte">Connexion</button>
+    <p>Pas encore inscrit?</p>
+    <a href="#" id="inscr">S'inscrire</a>
+</form>
+
+<h4 class="inscr d-none logged-out">Inscription</h4>
+<form class="inscr d-none logged-out">
+<div class="mb-3">
+    <label for="emailCompteInscr" class="form-label">Email</label>
+    <input type="email" name="email" class="form-control" id="emailCompteInscr" aria-describedby="emailHelp">
+</div>
+<div class="mb-3">
+    <label for="passCompteInscr" class="form-label">Password</label>
+    <input type="password" name="password" class="form-control" id="passCompteInscr">
+</div>
+<label for="droitCompteInscr"></label>
+<select name="typeCompte" class="form-select" aria-label="Default select example">
+    <option selected value="0">Utilisateur classique</option>
+    <option value="1">Admin</option>
+</select><br/>
+<button class="btn btn-primary" id="creaCompte">Valider</button>
+<p>Deja inscrit?</p>
+<a href="#" id="connec">Se connecter</a>
+</form>
